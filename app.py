@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 import sys
-import mock_data_generator.risk_data as risk
+import mock_data_generator.api as api
 
 app = Flask(__name__)
 
@@ -11,8 +11,8 @@ def index():
 
 
 @app.route("/profile")
-def say_minfraud_profile():
-    return risk.get_minfraud_profile()
+def say_profile():
+    return api.get_profile()
 
 
 if __name__ == '__main__':
