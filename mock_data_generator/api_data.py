@@ -2,7 +2,7 @@ import random
 import re
 
 
-def get_minfraud_profile():
+def get_profile():
     """
     :return:
     """

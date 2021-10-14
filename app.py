@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 import sys
-import mock_data_generator.api as api
+import mock_data_generator.api_data as api
 
 app = Flask(__name__)
 
